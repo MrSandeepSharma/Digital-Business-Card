@@ -1,0 +1,176 @@
+:root {
+    --clr-dark-200: #374151;
+    --clr-dark-300: #23252C;
+    --clr-dark-400: #1E1F26;
+    --clr-dark-700: #161619;
+    
+    --clr-white-700: #FFFFFF;
+    --clr-white-400: #F5F5F5;
+    --clr-white-300: #DCDCDC;
+    --clr-light: #F3BF99;
+    --clr-special: #5093E2;
+    
+    --ff-base: 'Inter', sans-serif;
+    
+    --gap-400: 1em;
+}
+
+/* Default */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: var(--ff-base);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+/* utility classes */
+
+/* Background color */
+.bg-clr-dark-300 {
+    background-color: var(--clr-dark-300);
+}
+
+.bg-clr-dark-400 {
+    background-color: var(--clr-dark-400);
+}
+
+.bg-clr-dark-700 {
+    background-color: var(--clr-dark-700);
+}
+
+.bg-white-700 {
+    background-color: var(--clr-white-700);
+}
+
+.bg-special {
+    background-color: var(--clr-special);
+}
+
+/* Color */
+.clr-white-700 {
+    color: var(--clr-white-700);
+}
+
+.clr-white-400 {
+    color: var(--clr-white-400);
+}
+
+.clr-white-300 {
+    color: var(--clr-white-400);
+}
+
+.clr-light {
+    color: var(--clr-light)
+}
+
+.clr-dark-200 {
+    color: var(--clr-dark-200);
+}
+
+/* Font Weight */
+.font-bold {
+    font-weight: bold;
+}
+
+/* Font Size */
+.fs-700 {
+    font-size: 1.5625rem;
+}
+
+.fs-400 {
+    font-size: 1rem;
+}
+
+.fs-300 {
+    font-size: 0.8rem;
+}
+
+.fs-200 {
+    font-size: 0.64rem;
+}
+
+.container,
+.container-wrapper {
+    margin-inline: auto; 
+}
+
+.container {
+    max-width: 317px;
+}
+
+.container-wrapper {
+    max-width: 80%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    gap: var(--gap-400);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button and links */
+.btn {
+    --gap-400: .5em;
+    width: 115px;
+    padding: .4em;
+    border-radius: 6px;
+}
+
+/* Layout */
+header {
+    text-align: center;
+    
+}
+
+header > h1 {
+    margin-block: .7em 0;
+}
+
+header > p {
+    margin-block: .2em .8em;
+}
+
+main {
+    margin-top: 2em;
+}
+
+section > p {
+    line-height: 1.5;
+    margin-top: .5em;
+}
+
+section > h2 {
+    margin-top: 1em;
+}
+
+footer {
+    padding: .2em;
+    margin-top: 2em;
+}
+
+footer > ul > li > a {
+    display: block;
+}
